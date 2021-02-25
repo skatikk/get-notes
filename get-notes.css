@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header starts */
+.header{
+    background-color: rgb(73, 21, 216);    
+    overflow: hidden;
+}
+.header a{
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    padding: 10px 20px;
+    text-align: center;
+}
+.header a:hover{
+    background-color:#000000;
+}
+/* header ends */
+/* download notes starts */
+.download-notes{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+}
+.download-notes > div{
+    border: 2px solid white;
+    padding: 20px 20px;
+
+}
+.download-notes .content{
+    flex: 40%;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto 0;
+}
+.content #notes{
+    font-size: 70px;
+    margin: 3px 0;
+}
+.content #description{
+    font-size: 30px;
+    color: rgb(95, 95, 95);
+    font-weight:lighter;
+    margin: 2px 0;
+    margin-bottom: 5px;
+}
+.content #description2{
+    font-size: 20px;
+    margin: 2px 0;
+    margin-bottom: 25px;
+}
+.content #download-btn{
+    text-decoration: none;
+    background-color: rgb(73, 21, 216);
+    color: white;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+.preview{
+    flex: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.preview img{
+    /* padding: 30px 20px; */
+    padding: 10px 10px;
+    height: auto;
+    max-width: 100%;
+}
+/* download notes ends */
+/* quote starts here */
+.quote p{
+    font-size: 22px;
+    text-align: center;
+    color:rgb(95, 95, 95);
+    padding: 20px 10px;
+}
+/* quote ends here */
+/* markdown starts here */
+
+.markdown{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+}
+.markdown > div{
+    border: 2px solid white;
+    padding: 20px 20px;
+}
+.markdown .markdown-content{
+    flex: 40%;
+    text-align: center;
+    padding: 20px 10px;
+    margin: auto 0;
+}
+.markdown-content #markdown-heading{
+    font-size: 50px;
+    margin: 3px 0;
+}
+.markdown-content #markdown-description{
+    font-size: 25px;
+    color: rgb(95, 95, 95);
+    font-weight:lighter;
+    margin: 2px 0;
+    margin-bottom: 5px;
+}
+.markdown-preview{
+    flex: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.markdown-preview img{
+    /* padding: 30px 20px; */
+    padding: 10px 10px;
+    height: auto;
+    max-width: 100%;
+}
+/* markdown ends here */
+/* search start here */
+.search{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+}
+.search > div{
+    border: 2px solid white;
+    padding: 20px 20px;
+
+}
+.search .search-content{
+    flex: 40%;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto 0;
+}
+.search-content #search-heading{
+    font-size: 50px;
+    margin: 3px 0;
+}
+.search-content #search-description{
+    font-size: 25px;
+    color: rgb(95, 95, 95);
+    font-weight:lighter;
+    margin: 2px 0;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+.search-preview{
+    flex: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.search-preview img{
+    /* padding: 30px 20px; */
+    padding: 10px 10px;
+    height: auto;
+    max-width: 100%;
+}
+/* search ends here */
+/* cross platform starts here */
+.cross-platform{
+    text-align: center;
+}
+.cross-content #cross-heading{
+    font-size: 50px;
+    margin: 3px 0;
+}
+.cross-content #cross-description{
+    font-size: 25px;
+    color: rgb(95, 95, 95);
+    font-weight:lighter;
+    margin: 2px 0;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+.cross-preview{
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.cross-preview .cross-item img{
+    padding: 5px 10px;
+}
+.cross-preview .cross-item a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+/* cross platform ends here */
+/* subscribe starts here */
+.subscribe{
+    text-align: center;
+}
+.subscribe h1{
+    font-size: 35px;
+    margin: 3px 0;
+}
+.subscribe input[type=email] {
+    width: 40%;
+    padding: 10px 10px;
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 15px;
+  }
+ .subscribe  input[type=checkbox]{
+     height: 15px;
+     width: 15px;
+     margin: 5px 10px 0px 5px;
+ } 
+ .subscribe label{
+     font-size: 12px;
+     padding: 5px 20px;
+     text-align: center ;
+     margin: 0 auto;
+ }
+ .subscribe .submit{
+     width: 40%;
+     font-size: 30px;
+     /* font-weight: 800; */
+     text-decoration: none;
+     background-color: rgb(73, 21, 216);
+     outline: none;
+     border: none;
+     color: white;
+     padding: 5px 25px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     /* font-weight: bold; */
+     cursor: pointer;
+ }
+/* subscribe ends here */
+
+
+/* footer starts here */
+footer{
+  margin: 10px 20px;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+#copyright{
+  float: left;
+  padding: 5px;
+}
+#privacy{
+  float: right;
+  padding: 5px;
+}
+#cookie{
+  float: right;
+  padding: 5px;
+}
+/* footer end here */
+
+
+
+
+
+/* cross platform ends here */
+/* Media queries */
+@media(max-width: 1000px){
+    body{
+        background-color: white;
+    }
+    
+    .header a{
+        width: 33.33%;
+    }
+    /* download-notes */
+    .download-notes{
+        flex-direction: column;
+    }
+    /* content area */
+    .download-notes .content{
+        padding: 12px 0;
+    }
+    /* .preview img{
+        padding: 2px 5;
+    } */
+    .content #notes{
+        font-size: 50px;
+    }
+    .content #description{
+        font-size: 25px;
+    }
+    .content #description2{
+        font-size: 15px;
+    }
+    .download-notes > div{
+        padding: 20px 20px; 
+    }
+    .content #download-btn{
+        text-decoration: none;
+        background-color: rgb(73, 21, 216);
+        color: white;
+        font-size: 20px;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+    /* download-notes ends */
+    /* quote  */
+    .quote p{
+        font-size: 13px; 
+        padding: 10px 15px;
+    }
+    /* quote ends */
+    /* markdown starts here */
+    .markdown{
+        flex-direction: column-reverse;
+    }
+    .markdown-content #markdown-heading{
+        font-size: 40px;
+    }
+    .markdown-content #markdown-description{
+        font-size: 17px;
+    } 
+    
+    /* markdown ends here */
+    /* search feature starts here */
+    .search{
+        flex-direction: column;
+    }
+    .search-content #search-heading{
+        font-size: 40px;
+    }
+    .search-content #search-description{
+        font-size: 20px;
+    }
+    /* search feature ends here */
+    /* cross platform starts here */
+    .cross-content #cross-heading{
+        font-size: 40px;
+    }
+    .cross-content #cross-description{
+        font-size: 17px;
+    }
+
+    .cross-preview{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* cross platform ends here */
+    /* subscribe starts here */
+    .subscribe h1{
+        font-size: 25px;
+        margin: 3px 0;
+    }
+    .subscribe input[type=email] {
+        width: 90%;
+        
+      }
+      .subscribe .submit{
+        width: 90%;
+        font-size: 20px;
+        padding: 5px 15px;
+        outline: none;
+    }
+    /* subscribe ends here */
+}
